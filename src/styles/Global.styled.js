@@ -11,20 +11,21 @@ export const Container = styled.div`
 `
 
 export const PaddingContainer = styled.div`
-    padding-top: ${({top}) => top}
-    padding-bottom: ${({bottom}) => bottom}
-    padding-left: ${({left}) => left}
-    padding-right: ${({right}) => right}
+    padding-top: ${({$top}) => $top};
+    padding-bottom: ${({$bottom}) => $bottom};
+    padding-left: ${({$left}) => $left};
+    padding-right: ${({$right}) => $right};
 `
 
 export const FlexContainer = styled.div`
     display: flex;
     justify-content: ${({justify}) => justify};
-    align-items: ${({gap}) => gap };
+    align-items: ${({$gap}) => $gap };
     flex-direction: ${({direction}) => direction};
+    align: ${({align}) => align};
 
     & > div {
-        flex: ${({ fullWidthChild }) => fullWidthChild && 1};
+        flex: ${({ $fullWidthChild }) => $fullWidthChild && 1};
     }
 `
 
@@ -61,7 +62,7 @@ export const ParaText = styled(PaddingContainer)`
     line-height: 2rem;
 `
 
-export const IconConainer = styled.div`
+export const IconContainer = styled.div`
     font-size: ${({ size }) => size};
     cursor: pointer;
     color: ${({ color, theme }) => {
