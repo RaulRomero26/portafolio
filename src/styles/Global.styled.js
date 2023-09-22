@@ -19,7 +19,7 @@ export const PaddingContainer = styled.div`
 
 export const FlexContainer = styled.div`
     display: flex;
-    justify-content: ${({justify}) => justify};
+    justify-content: ${({$justify}) => $justify};
     align-items: ${({$gap}) => $gap };
     flex-direction: ${({direction}) => direction};
     align: ${({align}) => align};

@@ -6,11 +6,19 @@ import {
     Heading,
     BlueText,
     ParaText,
-    IconContainer,
-    ShowcaseParticleContainer
-} from '../styles/Global.styled'
+    IconContainer
+} from '../styles/Global.styled';
+
+import {
+  ShowcaseImageCard,
+  ShowcaseParticleContainer,
+  Particle
+} from '../styles/Showcase.styled';
 
 import { BsLinkedin, BsTwitter, BsYoutube, BsInstagram } from 'react-icons/bs';
+
+import ShowcaseImg from '../assets/showcase-img.png';
+import BackgroundImg from '../assets/particle.png';
 
 export const Showcase = () => {
   return (
@@ -25,8 +33,8 @@ export const Showcase = () => {
           <div>
             <Heading as="h4" size="h4">Hello</Heading>
             <Heading 
-              as="h1" 
-              size="h1" 
+              as="h2" 
+              size="h2" 
               $top="0.5rem"
               $bottom="1rem"
             >
@@ -68,11 +76,35 @@ export const Showcase = () => {
 
           </div>
 
-          <FlexContainer>
+          <FlexContainer $justify="flex-end">
             <ShowcaseParticleContainer>
-
+              <ShowcaseImageCard>
+                <img src={ShowcaseImg} alt="showcase" />
+              </ShowcaseImageCard>
+                <Particle
+                  src={BackgroundImg}
+                  alt="particle"
+                  $top="-80px"
+                  $left="20px"
+                  $rotate="60deg"
+                />
+                <Particle
+                  src={BackgroundImg}
+                  alt="particle"
+                  $top="50px"
+                  $right="-70px"
+                  $rotate="0deg"
+                />
+                <Particle
+                  src={BackgroundImg}
+                  alt="particle"
+                  $bottom="10px"
+                  $left="-70px"
+                  $rotate="50deg"
+                />
             </ShowcaseParticleContainer>
           </FlexContainer>
+
         </FlexContainer>
     </PaddingContainer>
   )

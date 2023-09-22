@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components"
 import { theme } from './utils/Theme'
 
 import { Showcase } from './components/Showcase'
+import { MySkils } from "./components/MySkils"
 //import componets
 
 
@@ -17,6 +18,7 @@ function App() {
       <MainBody> 
         <Container>
           <Showcase/>
+          <MySkils/>
         </Container>
       </MainBody> 
     </ThemeProvider>
