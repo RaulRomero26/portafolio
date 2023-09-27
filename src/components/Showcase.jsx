@@ -17,7 +17,7 @@ import {
 
 import { BsLinkedin, BsTwitter, BsYoutube, BsInstagram } from 'react-icons/bs';
 
-import ShowcaseImg from '../assets/showcase-img.png';
+import ShowcaseImg from '../assets/me.png';
 import BackgroundImg from '../assets/particle.png';
 
 export const Showcase = () => {
@@ -79,7 +79,7 @@ export const Showcase = () => {
           <FlexContainer $justify="flex-end">
             <ShowcaseParticleContainer>
               <ShowcaseImageCard>
-                <img src={ShowcaseImg} alt="showcase" />
+                <img src={ShowcaseImg} width="300px"alt="showcase" />
               </ShowcaseImageCard>
                 <Particle
                   src={BackgroundImg}

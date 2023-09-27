@@ -5,7 +5,9 @@ export const theme  = {
         secondary: '#7eadfc',
         white: '#fff',
         black: '#000',
-        para_text_color: '#dcdcdc'
+        para_text_color: '#dcdcdc',
+        purple_one: '#8E2DE2',
+        purple_two: '#4A00E0'
     },
     fonts: {
         family: 'DM Sans',
