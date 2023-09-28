@@ -27,6 +27,12 @@ export const FlexContainer = styled.div`
     & > div {
         flex: ${({ $fullWidthChild }) => $fullWidthChild && 1};
     }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+        display: ${({ $responsiveFlex }) => $responsiveFlex ? 'flex': 'block' }
+
+        
+    }
 `
 
 export const Heading = styled(PaddingContainer)`

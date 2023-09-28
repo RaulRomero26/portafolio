@@ -55,7 +55,7 @@ export const Showcase = () => {
               and maintaining websites and web applications.
             </ParaText>
 
-            <FlexContainer $gap="20px">
+            <FlexContainer $gap="20px" $responsiveFlex>
                 <IconContainer color="blue" size="1.5rem">
                   <BsLinkedin/>
                 </IconContainer>

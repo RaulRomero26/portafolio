@@ -86,7 +86,7 @@ export const projectDetails = [
                         currently working on the rework of the project.`,
         tech_stack: ['JavaScript','Bootstrap 3', 'JQuery', 'HTML', 'CSS', 'PHP', 'MariaDB'],
         project_img: Project2,
-        project_url: 'http://youtube.com',
+        project_url: 'https://ieportal.ieinternationalenglish.com/',
         reverse: false
     },
     {
