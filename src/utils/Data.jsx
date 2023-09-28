@@ -3,6 +3,9 @@ import { SiJavascript } from 'react-icons/si';
 
 import Project1 from '../assets/Project1.png';
 import Project2 from '../assets/Project2.png';
+import Project3 from '../assets/Project3.png';
+import Project4 from '../assets/Project4.png';
+import Project5 from '../assets/Project5.png';
 
 export const Skills = [
     {
@@ -60,6 +63,40 @@ export const projectDetails = [
                         currently working on the rework of the project.`,
         tech_stack: ['JavaScript','Bootstrap 3', 'JQuery', 'HTML', 'CSS', 'PHP', 'MariaDB'],
         project_img: Project2,
+        project_url: 'htttp://youtube.com',
+        reverse: false
+    },
+    {
+        id: 2,
+        project_name: 'S.A.R.A.I.',
+        project_desc: `It is a platform for the administration of information from a security company, although 
+                        I did not develop it in its entirety, I adopted the project, finalizing it, correcting it, adding 
+                         modules and functionalities.`,
+        tech_stack: ['JavaScript','Bootstrap 4', 'JQuery', 'HTML', 'CSS', 'PHP', 'Node JS', 'MariaDB'],
+        project_img: Project3,
+        project_url: 'htttp://youtube.com',
+        reverse: false
+    },
+    {
+        id: 3,
+        project_name: 'ADVANCED SEARCHER',
+        project_desc: `A project carried out in a short time with the purpose of showing an MVP of what would later 
+                        become a more advanced one with more functionalities, it has a search for records in different 
+                        databases, of different categories, facial recognition, as well as search in sources open.`,
+        tech_stack: ['JavaScript','Bootstrap 4', 'HTML', 'CSS', 'PHP', 'MariaDB'],
+        project_img: Project4,
+        project_url: 'htttp://youtube.com',
+        reverse: false
+    },
+    {
+        id: 4,
+        project_name: 'IE Admin',
+        project_desc: `A platform in which I find myself working in my free time, the purpose is to help the 
+                        administrative part of an online English school, with the possibility of managing all 
+                        its staff, its payroll, as well as sending alerts or reminders about pending payments 
+                        of your student via WhatsApp and your attendance record.`,
+        tech_stack: ['JavaScript','Bootstrap 5', 'HTML', 'CSS', 'PHP', 'Node JS','MariaDB'],
+        project_img: Project5,
         project_url: 'htttp://youtube.com',
         reverse: false
     }
