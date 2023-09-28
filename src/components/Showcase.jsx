@@ -28,8 +28,11 @@ export const Showcase = () => {
         $right="10%"
         $top="15%"
         $bottom="10%"
+        $responsiveLeft="1rem"
+        $responsiveRight="1rem"
+        $responsiveTop="8rem"
     >
-        <FlexContainer $align="center" $fullWidthChild>
+        <FlexContainer $align="center" $fullWidthChild >
           <div>
             <Heading as="h4" size="h4">Hello</Heading>
             <Heading 

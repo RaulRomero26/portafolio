@@ -21,7 +21,10 @@ export const NavMenu = ({setOpenMenu}) => {
   return (
         <NavMenuContainer>
             <PaddingContainer $left="5%" $right="5%" $top="2rem">
-                <FlexContainer $justify="flex-end">
+                <FlexContainer 
+                    $justify="flex-end"
+                    $responsiveFlex
+                >
                     <MenuIcon
                         onClick={() => setOpenMenu(false)}
                     >
@@ -34,6 +37,7 @@ export const NavMenu = ({setOpenMenu}) => {
                 <FlexContainer
                     $direction="column"
                     $align="center"
+                    $responsiveFlex
                 >
                     {
                         navLinks.map((link) =>

@@ -20,9 +20,14 @@ return (
   <PaddingContainer
       id="Skils"
       $top="10%"
-      $bottom="10%"   
+      $bottom="10%"
+      $responsiveLeft="1rem"   
+      $responsiveRight="1rem"   
   >
-      <FlexContainer $fullWidthChild>
+      <FlexContainer 
+        $responsiveFlex 
+        $responsiveDirection="column-reverse"
+        $fullWidthChild>
         <SkillCardContainer>
           {Skills.map((skill) => {
             return (
