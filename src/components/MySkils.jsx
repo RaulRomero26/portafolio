@@ -18,7 +18,7 @@ import { Skills } from '../utils/Data';
 export const MySkils = () => {
 return (
   <PaddingContainer
-      id="skils"
+      id="Skils"
       $top="10%"
       $bottom="10%"   
   >

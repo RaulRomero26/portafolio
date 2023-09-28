@@ -5,8 +5,6 @@ import {
     FlexContainer,
     Heading,
     BlueText,
-    ParaText,
-    IconContainer,
     Button
 } from '../styles/Global.styled';
 

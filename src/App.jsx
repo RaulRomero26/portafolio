@@ -8,6 +8,7 @@ import { Showcase } from './components/Showcase';
 import { MySkils } from "./components/MySkils";
 import { MyProjects } from "./components/MyProjects";
 import { Footer } from './components/Footer';
+import { Navbar } from './components/Navbar';
 //import componets
 
 
@@ -18,6 +19,7 @@ function App() {
     <>
     <ThemeProvider theme={theme}>
       <MainBody> 
+        <Navbar/>
         <Container>
           <Showcase/>
           <MySkils/>

@@ -47,7 +47,7 @@ export const Project = ({data}) => {
           {data.project_desc}
         </ParaText>
         
-        <Button>Visit Website</Button>
+        <Button href={data.project_url} target='_blank'>Visit Website</Button>
       </div>
       
       <ProjectImageContainer $justify="flex-end">

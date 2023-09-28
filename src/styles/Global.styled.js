@@ -21,9 +21,8 @@ export const FlexContainer = styled.div`
     display: flex;
     justify-content: ${({$justify}) => $justify};
     gap: ${({$gap}) => $gap };
-    align-items: center;
-    flex-direction: ${({direction}) => direction};
-    align: ${({align}) => align};
+    align-items: ${({$align}) => $align};
+    flex-direction: ${({$direction}) => $direction};
 
     & > div {
         flex: ${({ $fullWidthChild }) => $fullWidthChild && 1};
