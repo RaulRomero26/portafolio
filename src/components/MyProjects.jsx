@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 import {
     PaddingContainer,
@@ -8,6 +9,8 @@ import {
 
 import { projectDetails } from '../utils/Data'
 import { Project } from '../components/layouts/Project';
+
+import { fadeInTopVariant } from '../utils/Variants';
 
 export const MyProjects = () => {
   return (
@@ -19,11 +22,21 @@ export const MyProjects = () => {
         $responsiveLeft="1rem"
         $responsiveRight="1rem"
     >
-        <Heading as="h4" size="h4"> 
+        <Heading 
+            as={motion.h4}
+            variants={fadeInTopVariant}
+            initial="hidden"
+            whileInView="visible" 
+            size="h4"> 
             MY PROJECTS
         </Heading>
 
-        <Heading as="h2" size="h2">
+        <Heading 
+            as={motion.h2}
+            variants={fadeInTopVariant}
+            initial="hidden"
+            whileInView="visible" 
+            size="h2">
             What <BlueText>I have built</BlueText>
         </Heading>
 

@@ -1,4 +1,6 @@
 
+import { motion } from 'framer-motion';
+
 import {
   FlexContainer,
   PaddingContainer,
@@ -14,6 +16,7 @@ import {
 } from '../styles/MySkils.styled';
 
 import { Skills } from '../utils/Data'; 
+import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
 
 export const MySkils = () => {
 return (
@@ -24,7 +27,11 @@ return (
       $responsiveLeft="1rem"   
       $responsiveRight="1rem"   
   >
-      <FlexContainer 
+      <FlexContainer
+        as={motion.div}
+          variants={ fadeInLeftVariant }
+          initial="hidden"
+          whileInView="visible"
         $responsiveFlex 
         $responsiveDirection="column-reverse"
         $fullWidthChild>
@@ -42,7 +49,11 @@ return (
             )
           })}
         </SkillCardContainer>
-        <div>
+        <motion.div
+            variants={ fadeInRightVariant }
+            initial="hidden"
+            whileInView="visible"
+          >
           <Heading as="h4" size="h4">
             My SKILLS
           </Heading>
@@ -64,7 +75,7 @@ return (
             and maintainable applications. This allowed me to adapt me
             to the needs of a buisiness.
           </ParaText>
-        </div>
+        </motion.div>
 
       </FlexContainer>
   </PaddingContainer>

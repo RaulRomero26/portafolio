@@ -1,4 +1,5 @@
 import React from 'react'
+import {motion} from 'framer-motion';
 
 import {
   PaddingContainer,
@@ -17,13 +18,19 @@ import {
 } from '../../styles/MyProject.styled';
 
 import {FaGithub} from 'react-icons/fa';
-import Project1 from '../../assets/Project1.png';
-import Project2 from '../../assets/Project2.png';
+import { fadeInLeftVariant,fadeInRightVariant } from '../../utils/Variants';
 
 export const Project = ({data}) => {
   return (
-    <FlexContainer $fullWidthChild>
-      <div>
+    <FlexContainer 
+      $direction = {data.reverse ? 'row-reverse': false }
+      $fullWidthChild
+    >
+      <motion.div
+        variants={ data.reverse ? fadeInRightVariant:fadeInLeftVariant}
+        initial="hidden"
+        whileInView="visible"
+      >
         <FlexContainer $align="center" $gap="1rem">
           <Heading as="h3" size="h3" $bottom="1rem">
             {data.project_name}
@@ -48,9 +55,15 @@ export const Project = ({data}) => {
         </ParaText>
         
         <Button href={data.project_url} target='_blank'>Visit Website</Button>
-      </div>
+      </motion.div>
       
-      <ProjectImageContainer $justify="flex-end">
+      <ProjectImageContainer 
+        as={motion.div}
+        variants={ data.reverse ? fadeInLeftVariant:fadeInRightVariant }
+        initial="hidden"
+        whileInView="visible"
+        $justify={data.reverse ? "flex-start":"flex-end"}
+      >
           <ProjectImage src={data.project_img} alt={data.project_name}/>
       </ProjectImageContainer>
     </FlexContainer>

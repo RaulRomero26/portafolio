@@ -63,7 +63,7 @@ export const projectDetails = [
         tech_stack: ['JavaScript','Bootstrap 5', 'HTML', 'CSS', 'PHP', 'Node JS','MariaDB'],
         project_img: Project5,
         project_url: 'http://youtube.com',
-        reverse: false
+        reverse: true
     },
     {
         id: 2,
@@ -87,7 +87,7 @@ export const projectDetails = [
         tech_stack: ['JavaScript','Bootstrap 3', 'JQuery', 'HTML', 'CSS', 'PHP', 'MariaDB'],
         project_img: Project2,
         project_url: 'https://ieportal.ieinternationalenglish.com/',
-        reverse: false
+        reverse: true
     },
     {
         id: 5,

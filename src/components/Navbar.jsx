@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion';
 
 import {
     PaddingContainer,
@@ -50,14 +51,17 @@ export const Navbar = () => {
                     </Logo>
 
                     <MenuIcon
+                        as={motion.a}
+                        whileHover={{scale:1.2}}
                         onClick={() => { setOpenMenu(true)}}
                     >
                         <GiHamburgerMenu/>
                     </MenuIcon>
                 </FlexContainer>
             </Container>
-
-            {openMenu && <NavMenu setOpenMenu={setOpenMenu}/>}
+            <AnimatePresence>
+                {openMenu && <NavMenu setOpenMenu={setOpenMenu}/>}
+            </AnimatePresence>
         </PaddingContainer>
     </NavbarContainer>
   )
