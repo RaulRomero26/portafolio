@@ -65,7 +65,7 @@ export const Footer = () => {
                         />
                     </PaddingContainer>
 
-                    <FlexContainer $justify="center">
+                    <FlexContainer $justify="center" $responsiveFlex>
                         <Button>Send Mesage</Button>
                     </FlexContainer>
                 </ContactForm>

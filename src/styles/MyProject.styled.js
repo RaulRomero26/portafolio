@@ -27,4 +27,9 @@ export const ProjectImage = styled.img`
     heihght: 300px;
     object-fit: cover;
     border-radius: 10px;
+
+    @media(max-width: ${({theme}) => theme.breakpoints.mobile}){
+        width: 100%;
+        margin-top: 2rem;
+    }
 `

@@ -15,6 +15,9 @@ export const MyProjects = () => {
         id="Projects"
         $top="5%"
         $bottom="5%"
+        $responsiveTop="20%"
+        $responsiveLeft="1rem"
+        $responsiveRight="1rem"
     >
         <Heading as="h4" size="h4"> 
             MY PROJECTS
