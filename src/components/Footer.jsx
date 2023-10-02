@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import {motion} from 'framer-motion'
-
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 import {
     PaddingContainer,
     FlexContainer,
@@ -17,6 +18,34 @@ import {
 import { fadeInBottomVariant } from '../utils/Variants';
 
 export const Footer = () => {
+
+    
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_2ae43rm', 'template_oqt365w', form.current, 'AHNJqNbJ1eQIDc4kv')
+        .then((result) => {
+            console.log(result.text);
+            e.target.reset();
+            Swal.fire({
+                title:'Message Sent',
+                html:'The message has been sent successfully!',
+                icon:'success',
+                timer: 4000
+            })
+        }, (error) => {
+            console.log(error.text);
+            Swal.fire({
+                title:'An error has occurred',
+                html:'The message could not be delivered',
+                icon:'error',
+                timer: 4000
+            })
+        });
+    };
+    
   return (
     <PaddingContainer
         id="Contact"
@@ -50,6 +79,8 @@ export const Footer = () => {
             <FlexContainer $justify="center">
                 <ContactForm
                     as={motion.form}
+                    ref={form}
+                    onSubmit={sendEmail}
                     variants={fadeInBottomVariant}
                     initial="hidden"
                     whileInView="visible" 
@@ -58,6 +89,7 @@ export const Footer = () => {
                         <FormLabel>Name:</FormLabel>
                         <FormInput
                             type="text"
+                            name="user_name"
                             placeholder="Enter your name"
                         />
                     </PaddingContainer>
@@ -66,6 +98,7 @@ export const Footer = () => {
                         <FormLabel>Email:</FormLabel>
                         <FormInput
                             type="email"
+                            name="user_email"
                             placeholder="Enter your email"
                         />
                     </PaddingContainer>
@@ -74,12 +107,13 @@ export const Footer = () => {
                         <FormLabel>Message:</FormLabel>
                         <FormInput
                             as="textarea"
+                            name='message'
                             placeholder="Enter your message"
                         />
                     </PaddingContainer>
 
                     <FlexContainer $justify="center" $responsiveFlex>
-                        <Button>Send Mesage</Button>
+                        <Button as="button"  type="submit" >Send Mesage</Button>
                     </FlexContainer>
                 </ContactForm>
             </FlexContainer>
