@@ -22,6 +22,7 @@ import { BsLinkedin, BsTwitter, BsYoutube, BsInstagram } from 'react-icons/bs';
 
 import ShowcaseImg from '../assets/me.png';
 import BackgroundImg from '../assets/particle.png';
+import Dev from '../assets/dev.png';
 import MyCv from '../assets/CV_Raul_Romero.pdf'
 
 import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
@@ -69,19 +70,19 @@ export const Showcase = () => {
             </ParaText>
 
             <FlexContainer $gap="20px" $responsiveFlex>
-                <IconContainer color="blue" size="1.5rem">
+                <IconContainer color="blue" size="1.5rem" as="a" href="https://www.linkedin.com/in/ra%C3%BAl-romero-dard%C3%B3n/" target='_blank'>
                   <BsLinkedin/>
                 </IconContainer>
 
-                <IconContainer color="blue" size="1.5rem">
+                <IconContainer color="blue" size="1.5rem" as="a" href="https://twitter.com/RaulRom26" target='_blank' >
                   <BsTwitter/>
                 </IconContainer>
 
-                <IconContainer color="blue" size="1.5rem">
-                  <BsYoutube/>
+               <IconContainer color="blue" size="1.5rem" as="a" href="https://fernando-herrera.com/#/studentdetail/link_2642@hotmail.com" target='_blank' >
+                  <img src={Dev} width="32px" alt="Devtalles Profile"/>
                 </IconContainer>
 
-                <IconContainer color="blue" size="1.5rem">
+                <IconContainer color="blue" size="1.5rem" as="a" href='https://www.instagram.com/smashrilo_2343/' target='_blank'>
                   <BsInstagram/>
                 </IconContainer> 
 

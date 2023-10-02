@@ -112,7 +112,8 @@ export const IconContainer = styled.div`
             default:
                 return;
         }
-    }}
+    }};
+    z-index:1;
 `
 
 export const Button = styled.a`
@@ -125,6 +126,8 @@ export const Button = styled.a`
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    z-index: 1;
+
 
     &:hover{
        color: ${({theme}) => theme.colors.primary_light};
