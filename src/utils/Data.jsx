@@ -58,7 +58,7 @@ export const projectDetails = [
         project_name: 'IE Admin',
         project_desc: `A platform in which I find myself working in my free time, the purpose is to help the 
                         administrative part of an online English school, with the possibility of managing all 
-                        its staff, its payroll, as well as sending alerts or reminders about pending payments 
+                        its staff and its payroll, as well as sending alerts or reminders about pending payments 
                         of your student via WhatsApp and your attendance record.`,
         tech_stack: ['JavaScript','Bootstrap 5', 'HTML', 'CSS', 'PHP', 'Node JS','MariaDB'],
         project_img: Project5,
@@ -79,10 +79,10 @@ export const projectDetails = [
     {
         id: 3,
         project_name: 'IE Portal',
-        project_desc: `It is a platform currently used by an online English school, the objective was to 
+        project_desc: `It is a platform currently used by an online English school, the objective is to 
                         be a support for the students, it has different types of activities and exercises for 
                         them, pre-recorded classes, readings, audios, etc. It also has an administration panel 
-                        to continue adding more reagents, users, teachers among other functionalities, I am 
+                        to continue adding more reagents, users, teachers and among other functionalities I am 
                         currently working on the rework of the project.`,
         tech_stack: ['JavaScript','Bootstrap 3', 'JQuery', 'HTML', 'CSS', 'PHP', 'MariaDB'],
         project_img: Project2,
@@ -92,9 +92,9 @@ export const projectDetails = [
     {
         id: 5,
         project_name: 'ADVANCED SEARCHER',
-        project_desc: `A project carried out in a short time with the purpose of showing an MVP of what would later 
+        project_desc: `A project carried out in a short time to show an MVP of what would later 
                         become a more advanced one with more functionalities, it has a search for records in different 
-                        databases, of different categories, facial recognition, as well as search in sources open.`,
+                        databases of different categories, facial-recognition, as well a search in sources open.`,
         tech_stack: ['JavaScript','Bootstrap 4', 'HTML', 'CSS', 'PHP', 'MariaDB'],
         project_img: Project4,
         project_url: 'http://youtube.com',
