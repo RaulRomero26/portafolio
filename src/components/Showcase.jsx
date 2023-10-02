@@ -8,7 +8,8 @@ import {
     Heading,
     BlueText,
     ParaText,
-    IconContainer
+    IconContainer,
+    Button
 } from '../styles/Global.styled';
 
 import {
@@ -21,6 +22,7 @@ import { BsLinkedin, BsTwitter, BsYoutube, BsInstagram } from 'react-icons/bs';
 
 import ShowcaseImg from '../assets/me.png';
 import BackgroundImg from '../assets/particle.png';
+import MyCv from '../assets/CV_Raul_Romero.pdf'
 
 import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
 
@@ -82,6 +84,10 @@ export const Showcase = () => {
                 <IconContainer color="blue" size="1.5rem">
                   <BsInstagram/>
                 </IconContainer> 
+
+                <Button href={MyCv} download="Resume_Raul_Romero">
+                  Download Resume
+                </Button>
             </FlexContainer>
 
 
